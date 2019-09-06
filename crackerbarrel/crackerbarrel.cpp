@@ -88,12 +88,12 @@ int main()
         for (int i = 0; i < 5; i++)
         {
             cin >> line;
-            for (int i = 0; i < line.size(); i+=2)
+            for (int j = 0; j < line.size(); j+=2)
             {
-                board += line[i];
+                board += line[j];
             }
         }
-        //cerr << board << endl;
+        cerr << board << endl;
         bool canDo = evalBoard(board, winSym);
         if (canDo) cout << "Possible" << endl;
         else cout << "Impossible" << endl;

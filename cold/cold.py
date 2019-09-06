@@ -2,12 +2,10 @@
 import sys
 
 n = int(input())
-print(n, file=sys.stderr)
-line = input()
 count = 0
+line = input()
 for token in line.split():
     v = int(token)
-    print(v, file=sys.stderr)
     if v < 0:
         count = count + 1
 print(count)
