@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main()
+{
+    int desiredCounts[] = {1, 1, 2, 2, 2, 8};
+
+    for (int i = 0; i < 6; i++)
+    {
+        int count = 0;
+        std::cin >> count;
+        std::cout << desiredCounts[i] - count << " ";
+    }
+    return 0;
+}
